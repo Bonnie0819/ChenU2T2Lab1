@@ -30,6 +30,5 @@ public class RectangleRunner {
         System.out.println("These three plots require " + totalArea + " square feet of seeds");
 
 
-
     }
 }
