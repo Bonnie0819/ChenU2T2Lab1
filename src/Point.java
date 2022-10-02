@@ -35,4 +35,34 @@ public class Point {
             x = newX;
         }
 
+        public void setY(int newY) { y = newY; }
+
+    //method coordinate/quadrant
+
+        public String coordinate() { return "(" + x + ", " + y + ")"; }
+
+        public String quadrant() {
+
+            if (x > 0 && y > 0) { return "I";}
+            else {
+                if (x > 0 && y < 0) { return "II";}
+                else {
+                    if (x < 0 && y < 0) { return "III";}
+                    else {
+                        if (x < 0 && y > 0) { return "IV";}
+                        else {
+                            if (x == 0 && y == 0) { return "origin";}
+                            else { return "on an axis";}
+                            }
+                    }
+                }
+            }
+
+
+
+
+
+        }
+
+
     }
